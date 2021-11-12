@@ -4,6 +4,7 @@
     align-items: center;
     justify-content:flex-start;
     height: 100%;
+    background-image: url(https://i.pinimg.com/736x/eb/56/31/eb563113be40ea5aa7b9726afc3321fc.jpg);
     }
 
 
@@ -12,14 +13,15 @@
     height: 100%;
     display:flex;
     box-sizing: border-box;
-}
+    }
      .itmLeft > .itmPattern{
          width: 500px;
      }
 
 .itmRight{
-    border: 5px solid #e6e6ff; 
-    margin-left: 20px; 
+    border: 6px solid #e6e6ff; 
+    margin-left: 3%; 
+    margin-right: 20%;
     flex-direction: column;
     height: 600px;
     width: 600px;
@@ -28,13 +30,14 @@
 }
 
         .ctnLogin{
+            font-family: monospace;
             display: flex;
-            border: 2px solid #e6e6ff;
             flex-direction: column;
         }
          
 
         .ctnInputs{
+            font-family: monospace;
             display: flex;
             flex-direction: column;
             margin-left: 15%;
@@ -54,6 +57,7 @@
 
     
 .ctnButton{
+    font-family: monospace;
     display: flex;
     flex-direction: column;
     margin-left: 15%;
