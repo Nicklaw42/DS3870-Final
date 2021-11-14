@@ -8,7 +8,7 @@
     }
 
 
-    .itmLeft{
+.itmLeft{
         width: 30%;
     height: 100%;
     display:flex;
@@ -24,7 +24,7 @@
     margin-right: 20%;
     flex-direction: column;
     height: 600px;
-    width: 600px;
+    width: 500px;
     justify-content: flex-start;
     align-self: center;
 }
