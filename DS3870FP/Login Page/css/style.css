@@ -1,10 +1,20 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #FFC300;
+}
+
 .ctnBody{
 
     display: flex;
     align-items: center;
     justify-content:flex-start;
     height: 100%;
-    background-image: url(https://i.pinimg.com/736x/eb/56/31/eb563113be40ea5aa7b9726afc3321fc.jpg);
+    background-image: url(https://i.pinimg.com/736x/43/fd/b8/43fdb893cf51b952826aab60d623bca4--retro-wallpaper-free-desktop-wallpaper.jpg);
+    background-size: cover;
     }
 
 
@@ -66,11 +76,53 @@
         .ctnButton > .itmLoginButton{
             margin-top: 5px;
             margin-bottom: 5px;
-            background-color: indianred;
+            background-color:  #fc542b   ;
             border: 5px solid #e6e6ff;
         }
         .ctnButton > .itmGoogleButton{
             margin-top: 5px;
-            background-color: indianred;
+            background-color:    #fc542b   ;
             border: 5px solid #e6e6ff;
         }
+
+.overlay{
+    position: fixed;
+    height: 100hv;
+    background: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.left, .right, .middle {
+    height: 100vh;
+}
+
+h2 {
+    color:    #fc542b   ;
+}
+
+.left {
+    padding: 8em 10em;
+
+    
+}
+
+    .left > p.subhead {color: black;
+        font-size: 1.5rem;
+        margin-top: -5em;
+        }
+.right {
+    display: grid;
+    justify-items: center;
+    background-color: #FFC300;
+}
+
+.exit{
+    margin-top: 1.2em;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    margin-top: 5em;
+}
