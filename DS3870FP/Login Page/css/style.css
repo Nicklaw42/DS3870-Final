@@ -50,7 +50,7 @@
             width: 75%;
         }
             .itmUsername{
-                margin-top: 70px;
+                margin-top: 25px;
                 margin-bottom: 5px;
                 border: 5px solid #e6e6ff;
             }
@@ -70,7 +70,7 @@
     width: 75%;
 }
         .ctnButton > .itmLoginButton{
-            margin-top: 5px;
+            margin-top: 15px;
             margin-bottom: 5px;
             background-color:  #fc542b   ;
             border: 5px solid #e6e6ff;
@@ -115,17 +115,24 @@
 h2 {
     color:    #fc542b   ;
 }
+h3{
+    color: #fc542b ;
+}
+h4{
+    color: #fc542b ;
+
+}
 
 .left {
     padding: 8em 10em;
 
     
 }
-
-    .left > p.subhead {color: black;
-        font-size: 1.5rem;
-        margin-top: -5em;
-        }
+.typeset{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    
+}
 .right {
     display: grid;
     justify-items: center;

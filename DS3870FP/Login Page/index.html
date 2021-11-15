@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.css"/>
         <link rel="stylesheet" href="css/lib/bootstrap.min darkly.css">
         <link rel="stylesheet" href="css/style.css">
+        <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
         <!--Look into a nav bar. Look into recolouring things a little darker and less. Higher rez visuals. Reference Panic.com. -->
  
     </head>
@@ -14,17 +15,19 @@
             <div class="itmLeft">
                 <img src="css/images/Pattern.png" class="itmPattern">
             </div>
-        <div class="itmRight card bg-primary">
+        <div class="itmRight card">
             <div class="ctnLogin"  style="text-align: center;">
                 <h2 class="itmLogin">Hermes Managment Solutions</h2>
             </div>
             <div class="ctnInputs">
                 <input type="text" class="itmUsername form-control" placeholder="Username" aria-label="Enter Username">
                 <input type="password" class="itmPassword form-control" placeholder="Password" aria-label="Enter Password">
+                <h4 class="text-center">or</h4>
+                <input type="number" class="form-control typeset" placeholder="Clock in Code">
             </div>
             <div class="ctnButton">
             <button type="button" class="itmLoginButton btn">Login</button>
-            <button type="button" class="itmGoogleButton btn ">Google Login</button>
+            <button type="button" id="my-signin2" class="itmGoogleButton btn ">Google Login</button>
             <button type="button" class="itmSignUpButton btn">Sign Up</button>
             </div>
     </div>
@@ -33,10 +36,14 @@
     <div class="left stagger">
         <div class="card ctnCreate ">
         <h2>Sign Up</h2>
-        <input type="text" class="form-control" placeholder="Email">
-        <input type="text" class="form-control" placeholder="Username">
-        <input type="text" class="form-control" placeholder="Password">
-        <input type="text" class="form-control" placeholder="Retype Password">
+        <input type="text" class="form-control typeset" placeholder="First Name">
+        <input type="text" class="form-control typeset" placeholder="Last Name">
+        <input type="email" class="form-control typeset" placeholder="Email">
+        <div class="card">
+        <h3>For New Employees</h3>
+        <input type="number" class="form-control typeset" placeholder="Clock in Code">
+        <input type="number" class="form-control typeset" placeholder="Retype Clock in Code">
+        </div>
         <button type="button" class="itmCreateAccount btn"> Create Account </button>
         
     </div>
@@ -76,6 +83,7 @@
         <script src="js/app.js"></script>
         <script src="js/lib/bootstrap.bundle.min.js"></script>
         <script src="js/lib/bootstrap.bundle.min.js.map"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
        
   
     </body>
