@@ -102,6 +102,12 @@
     pointer-events: none;
 }
 
+.ctnCreate{
+    margin-right: 20%;
+    margin-left: 20%;  
+    width: 80%
+}
+
 .ctnCreate > .itmCreateAccount{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -137,6 +143,7 @@ h4{
     display: grid;
     justify-items: center;
     background-color: #FFC300;
+    margin-left: 20px;
 }
 
 .exit{
