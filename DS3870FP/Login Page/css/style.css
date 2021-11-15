@@ -2,13 +2,9 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    background: #FFC300;
-}
 
 .ctnBody{
-
+    
     display: flex;
     align-items: center;
     justify-content:flex-start;
@@ -92,17 +88,28 @@ body{
         }
 
 .overlay{
+    font-family: monospace;
     position: fixed;
-    height: 100hv;
-    background: white;
+    height: 100vh;
+    background: orangered;
     top: 0;
     left: 0;
     width: 100%;    
     display: grid;
     grid-template-columns: 75% auto 6em;
+    opacity: 0;
+    transform: translateX(10%) scale(.9);
+    pointer-events: none;
 }
-.left, .right, .middle {
+
+.ctnCreate > .itmCreateAccount{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.left, .right{
     height: 100vh;
+    transform: translateX(50%);
+    opacity: 0;
 }
 
 h2 {
@@ -130,7 +137,3 @@ h2 {
     cursor: pointer;
 }
 
-.cards {
-    display: flex;
-    margin-top: 5em;
-}
