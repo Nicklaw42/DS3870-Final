@@ -9,33 +9,52 @@
     align-items: center;
     justify-content:flex-start;
     height: 100%;
-    background-image: url(https://i.pinimg.com/736x/43/fd/b8/43fdb893cf51b952826aab60d623bca4--retro-wallpaper-free-desktop-wallpaper.jpg);
+    background-image: url('C:/Users/nickl/OneDrive - Tennessee Tech University/Desktop/DS3870-Final/DS3870FP/Login Page/css/images/Backgound2.4.png');
     background-size: cover;
     }
 
 
 .itmLeft{
-        width: 30%;
+    width: 30%;
     height: 100%;
-    display:flex;
+    background-color: #221e25;
+    border: 6px solid grey; 
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     }
-     .itmLeft > .itmPattern{
-         width: 500px;
-     }
-
+   
+     @media (max-width: 800px) {
+        .itmLeft {
+            opacity: 0;
+        }
+        
+      }
+    .itmCaption{
+        font-family: monospace;
+        text-align: center;
+    }
 .itmRight{
-    border: 6px solid #e6e6ff; 
-    margin-left: 3%; 
+    background-color: #221e25;
+    border: 6px solid grey; 
+    margin-left: 5%; 
     margin-right: 20%;
     flex-direction: column;
-    height: 600px;
-    width: 500px;
+    height: auto;
+    width: auto;
     justify-content: flex-start;
     align-self: center;
 }
+    @media (max-width: 800px){
+        .itmRight{
+            margin-left: 0%;
+        }
+        
+    }
 
         .ctnLogin{
+            padding: 1%;
+            color: white;
             font-family: monospace;
             display: flex;
             flex-direction: column;
@@ -50,12 +69,12 @@
             width: 75%;
         }
             .itmUsername{
-                margin-top: 25px;
+                margin-top: 10%;
                 margin-bottom: 5px;
                 border: 5px solid #e6e6ff;
             }
             .itmPassword{
-                margin-top: 5px;
+                margin-top: 1%;
                 margin-bottom: 5px;
                 border: 5px solid #e6e6ff;
             }
@@ -70,84 +89,73 @@
     width: 75%;
 }
         .ctnButton > .itmLoginButton{
-            margin-top: 15px;
-            margin-bottom: 5px;
-            background-color:  #fc542b   ;
+            margin-top: 10%;
+            margin-bottom: 3%;
+            background-color:  #c42d2d;
             border: 5px solid #e6e6ff;
         }
         .ctnButton > .itmGoogleButton{
-            margin-top: 5px;
-            margin-bottom: 5px;
-            background-color:    #fc542b;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            background-color:    #28d9e1;
             border: 5px solid #e6e6ff;
         }
         .ctnButton > .itmSignUpButton{
-            margin-top: 5px;
+            margin-top: 3%;
+            margin-bottom: 5%;
             background-color:    #fc542b   ;
             border: 5px solid #e6e6ff;
         }
 
-.overlay{
+.ctnSignUp{
     font-family: monospace;
     position: fixed;
     height: 100vh;
-    background: orangered;
+    background: black;
     top: 0;
     left: 0;
     width: 100%;    
-    display: grid;
-    grid-template-columns: 75% auto 6em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px 30px;
     opacity: 0;
     transform: translateX(10%) scale(.9);
     pointer-events: none;
 }
 
-.ctnCreate{
-    margin-right: 20%;
-    margin-left: 20%;  
-    width: 80%
-}
+@media (max-width: 500px) {
+    .ctnSignup {
+        flex-wrap: nowrap;
+        justify-content: none;
+      flex-direction: column;
+    }
+  }
+    .itmUser, .itmButtons, .itmOrg, .itmReturn{
+        align-self: center;
+        width: 40%;
+        height: 40%;
+       
+    }
+        .itmUser, .itmButtons{
+            margin-left: 5%;
+        }
+        .itmOrg, .itmReturn{
+            margin-right: 5%;
+        }
 
-.ctnCreate > .itmCreateAccount{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.left, .right{
-    height: 100vh;
-    transform: translateX(50%);
-    opacity: 0;
-}
-
-h2 {
-    color:    #fc542b   ;
-}
-h3{
-    color: #fc542b ;
-}
-h4{
-    color: #fc542b ;
-
-}
-
-.left {
-    padding: 8em 10em;
-
+        @media (max-width: 500px) {
+            .itmOrg, .itmReturn, .itmUser, .itmButtons {
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+          }
+    .itmButtonChild{
+        flex-grow: 1;
+    }
     
-}
-.typeset{
-    margin-top: 3px;
-    margin-bottom: 3px;
+    .itmExit{
+        flex-grow: 1;
+    }
     
-}
-.right {
-    display: grid;
-    justify-items: center;
-    background-color: #FFC300;
-    margin-left: 20px;
-}
-
-.exit{
-    margin-top: 1.2em;
-    cursor: pointer;
-}
-
