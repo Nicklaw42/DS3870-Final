@@ -11,6 +11,7 @@
     height: 100%;
     background-image: url('C:/Users/nickl/OneDrive - Tennessee Tech University/Desktop/DS3870-Final/DS3870FP/Login Page/css/images/Backgound2.4.png');
     background-size: cover;
+    opacity: 1;
     }
 
 
@@ -111,7 +112,6 @@
     font-family: monospace;
     position: fixed;
     height: 100vh;
-    background: black;
     top: 0;
     left: 0;
     width: 100%;    
@@ -124,6 +124,19 @@
     transform: translateX(10%) scale(.9);
     pointer-events: none;
 }
+        .itmUser, .itmCreate{
+            margin-left: 5%;
+        }
+        .itmOrg, .itmReturn{
+            margin-right: 5%;
+        }
+
+        @media (max-width: 500px) {
+            .itmOrg, .itmReturn, .itmUser, .itmCreate {
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+        }
 
 @media (max-width: 500px) {
     .ctnSignup {
@@ -132,30 +145,65 @@
       flex-direction: column;
     }
   }
-    .itmUser, .itmButtons, .itmOrg, .itmReturn{
+    .itmUser, .itmCreate, .itmOrg, .itmReturn{
         align-self: center;
         width: 40%;
         height: 40%;
        
     }
-        .itmUser, .itmButtons{
-            margin-left: 5%;
-        }
-        .itmOrg, .itmReturn{
-            margin-right: 5%;
-        }
-
-        @media (max-width: 500px) {
-            .itmOrg, .itmReturn, .itmUser, .itmButtons {
-                margin-left: 0%;
-                margin-right: 0%;
+    @media (max-width: 500px) {
+        .itmUser, .itmCreate, .itmOrg, .itmReturn{
+            width: 90%;
+        }}
+    .itmUser{
+        background-color: #221e25;
+        border: 6px solid grey; 
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .itmOrg{
+        background-color: #221e25;
+        border: 6px solid grey; 
+        justify-content: space-evenly;
+    }
+    .itmCreate{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #221e25;
+        border: 6px solid grey; 
+    }
+            .itmCreateConfirm{
+                align-self: center;
+                background-color: #fc542b;
+                border: 5px solid #e6e6ff;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                height: 40%;
+                width: 60%;
             }
-          }
-    .itmButtonChild{
-        flex-grow: 1;
+            .itmCreateReturn{
+                align-self: center;
+                background-color: #28d9e1 ;
+                border: 5px solid #e6e6ff;
+                margin-bottom: 5%;
+                height: 40%;
+                width: 60%;
+            }
+            @media (max-width: 500px) {
+                .itmCreateConfirm, .itmCreateReturn{
+                    flex-grow: 1 !important;
+                }
+            }
+
+    .itmReturn{
+        background-color: #221e25;
+        border: 6px solid grey; 
     }
+            .itmReturnLogo
+            {
+                width: 100%;
+                height: 100%;
+            }
+              
     
-    .itmExit{
-        flex-grow: 1;
-    }
     

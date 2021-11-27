@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.css"/>
+        <link rel="stylesheet" href="css/lib/bootstrap.min darkly.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="row" style="background-image: url(css/images/General\ Background.png);">
+        <div class="card col-4 p-2" style="font-family: monospace; background-color: transparent;"> 
+            <div class="card" style="background-color: #221e25">
+            <h3 style="text-align: center;"> Pipe</h3>
+            <div class="card mb-2 " style="background-color: #c95639;  border-color: white; border-width: 3px;">
+            <p>UPC: 2443442</p>
+            <p>Unit Price: 43.32</p>
+            <p>Minimum Amount: 500</p>
+            <p>Current Amount: 765</p>
+            </div>
+            <label>Description:</label>
+            <span  class="input card" role="textbox" contenteditable style=" background-color: #1e9da3; border-color: white; border-width: 3px;"></span>
+            <button class="button mt-3" style="background-color: #68d121; color:white; border-color: white; border-width: 3px;"> Edit Material</button>
+            <div class="card mt-3" style="background-color: #68d121; color:white; border-color: white; border-width: 3px;">
+            <label for="Materials">Select material</label>
+            <select name="Materials" id="Materials">
+                <option style="text-align: center;">---</option>
+                <option>Pipe</option>
+                <option>Bubblewrap</option>
+            </select>
+            </div>
+            <img src="css/images/Hermes Managment2.png">
+            </div>
+        </div>
+        <div class="card col-8 p-3" style="background-color: transparent;">
+            <div class="card" style="background-color: #221e25;">
+            <h2 style="font-family: monospace;">Your Materials</h2>
+            <table class="table " id="tblMaterials"style="font-family: monospace;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>UPC</th>
+                        <th>UnitPrice</th>
+                        <th>Minimum Amount</th>
+                        <th>Current Amount</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Pipe</td> <td>2443442</td> <td>43.32</td> <td>500</td><td>675</td>
+                        </tr>
+                        <tr>
+                            <td>Bubblewrap</td><td>2442134</td><td>12.12</td><td>1000</td><td>2000</td>
+                        </tr>
+                    </tbody>
+                
+                </thead>
+               
+            </table>
+        </div>
+        </div>
+          
+        
+        
+    </body>
+    
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
+</html>

@@ -1,0 +1,103 @@
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.css"/>
+        <link rel="stylesheet" href="css/lib/bootstrap.min darkly.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="User Management User Management-expand-lg User Management-light bg-light">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="UserManagementDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  User Management
+                </a>
+                <div class="dropdown-menu" aria-labelledby="UserManagementDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Enable/Disable a User</a>
+                  <a class="dropdown-item" href="#">View a User details</a>
+                  <a class="dropdown-item" href="#">Update a user details</a>
+                  <a class="dropdown-item" href="#">Add image of User</a>
+                  <a class="dropdown-item" href="#">Add reminders to user</a>
+                  <a class="dropdown-item" href="#">set hourly rate</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="LocationsDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Locations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="LocationsDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Create/Edit Campus Locations</a>
+                      <a class="dropdown-item" href="#">Create/Edit Buildings</a>
+                      <a class="dropdown-item" href="#">Create/Edit Rooms</a>
+                      <a class="dropdown-item" href="#">Assign Users to Locations</a>
+                      <a class="dropdown-item" href="#">Assign Schedules to Locations</a>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="SchedulesDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Schedules
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="SchedulesDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Create/Edit Timed Schedules</a>
+                          <a class="dropdown-item" href="#">Assign tasks to schedule</a>
+                          <a class="dropdown-item" href="#">Alerts</a>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="TasksDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Tasks
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="TasksDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Create/Edit</a>
+                              <a class="dropdown-item" href="#">Materials Needed</a>
+                              <a class="dropdown-item" href="#">Expected Time</a>
+                              <a class="dropdown-item" href="#">Description</a>
+                              <a class="dropdown-item" href="#">Link to External Instructions</a>
+                              <a class="dropdown-item" href="#">Icons</a>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="MaterialsMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Materials
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="TasksDropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Inventory Accounting</a>
+                                  <a class="dropdown-item" href="#">Minimum Amount On Hand</a>
+                                  <a class="dropdown-item" href="#">Cost</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="MaterialIssuanceMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Material Issuance
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="MaterialIssuanceDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Amount</a>
+                    <a class="dropdown-item" href="#">Location On User</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ProblemsMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Problems
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="ProblemsDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Report Problem By User</a>
+                          <a class="dropdown-item" href="#">Assign Problem</a>
+                          <a class="dropdown-item" href="#">Alert User assigned to Location</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <div class="card">
+            <h1>Profile</h1>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Status</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+        </table>
+
+
+
+
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/lib/bootstrap.bundle.min.js"></script>
+        <script src="js/lib/bootstrap.bundle.min.js.map"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </body>
+</html>
