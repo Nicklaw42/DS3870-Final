@@ -10,8 +10,16 @@
     </head>
     <body class="row" style="background-image: url(css/images/General\ Background.png);">
         <div class="card col-4 p-2" style="font-family: monospace; background-color: transparent;"> 
-            <div class="card" style="background-color: #221e25">
-            <h3 style="text-align: center;"> Pipe</h3>
+            <div class="card p-1" style="background-color: #221e25">
+                <div class="card mt-3 mb-1" style="text-align: center; background-color: #221e25; ">
+                    <label for="Materials">Select material</label>
+                    <select name="Materials" id="Materials">
+                        <option style="text-align: center;">---</option>
+                        <option>Pipe</option>
+                        <option>Bubblewrap</option>
+                    </select>
+                    </div>
+            <h3 > Pipe</h3>
             <div class="card mb-2 " style="background-color: #c95639;  border-color: white; border-width: 3px;">
             <p>UPC: 2443442</p>
             <p>Unit Price: 43.32</p>
@@ -21,14 +29,7 @@
             <label>Description:</label>
             <span  class="input card" role="textbox" contenteditable style=" background-color: #1e9da3; border-color: white; border-width: 3px;"></span>
             <button class="button mt-3" style="background-color: #68d121; color:white; border-color: white; border-width: 3px;"> Edit Material</button>
-            <div class="card mt-3" style="background-color: #68d121; color:white; border-color: white; border-width: 3px;">
-            <label for="Materials">Select material</label>
-            <select name="Materials" id="Materials">
-                <option style="text-align: center;">---</option>
-                <option>Pipe</option>
-                <option>Bubblewrap</option>
-            </select>
-            </div>
+          
             <img src="css/images/Hermes Managment2.png">
             </div>
         </div>

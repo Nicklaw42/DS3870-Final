@@ -212,3 +212,7 @@
     transform: translateY(-100%) scale(.9);
     pointer-events: none;
 }
+
+.divGeorge{
+    display: none;
+}

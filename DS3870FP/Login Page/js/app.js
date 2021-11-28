@@ -9,10 +9,12 @@ $(document).ready(function() {
 } );
 
 $('#Employees').change(function() {
-    if($('#Employees').val() == '---'){
-        $('#divGeorge').slideUp();
+    if($('#Employees').val() != '---'){
+        $('#divGeorge').css('display', 'inherit');
+        $('#btnAddEmployee').css('pointer-events', 'none');
     //$('divHours').css('display','none');
     } else {
-        $('#divGeorge').slideDown();
+        $('#divGeorge').css('display', 'none');
+        $('#btnAddEmployee').css('pointer-events', 'auto');
     }
 })
