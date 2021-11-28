@@ -8,9 +8,92 @@
         <link rel="stylesheet" href="css/lib/bootstrap.min darkly.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="row" style="background-image: url(css/images/General\ Background.png);">
+        <div class="card col-4 p-2" style="font-family: monospace; background-color: transparent;"> 
+            <div class="card" style="background-color: #221e25">
+                <img src="css/images/profile.png" style="border-radius: 50%; align-self: center;" class="mt-3" width="50%" height="70%">
+                <button class="button mt-3 p-1 btnAddEmployee" id="btnAddEmployee" > Add New Employee</button>
+                <label class="mt-3 mb-2 p-1" for="Employees"  style="align-items: center; text-align: center; background-color: #c95639; color:white; border-color: white; border-width: 3px;"> Select Employee
+                <select class="slcEmployee">
+                    <option style="text-align: center;">---</option>
+                    <option>McCalister</option>
+                    <option>Brian</option>
+                </select>
+            </label>
+            <div class="card divGeorge">
+                <p>First Name: George </p>
+                <p>Last Name: Brian</p>
+                <p>Position: Grower</p>
+                <p>Location: GreenHouse</p>
+                <p>Wage: 11.23</p>
+                <label>Status: <button type="button"> Inactive </button></label>
+            </div>
+            </div>
+            <div class="card mt-1 divNewEmployee" style="background-color: #221e25">
+                <h4>New Employee</h4>
+               <label> Last Name: <input ></label>
+               <label> First Name: <input ></label>
+               <label> Position: <input ></label>
+               <label> Location: <input ></label>
+               <label> Wage: <input ></label>
+               <button type="button"> Status: </button>
+               <button type="button" class="btnCancel"> Cancel </button>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            let open = document.querySelector('.btnAddEmployee');
+            let close = document.querySelector('.btnCancel');
+            let tl = gsap.timeline();
+
+            tl.to('.divNewEmployee', {opacity: 1, y:0, scale: 1, pointerEvents:'auto'})
+            tl.to('.slcEmployee', {pointerEvents: 'none'})
+            tl.pause();
+           
+
+            open.addEventListener('click', () => {
+                    tl.play();
+                    console.log(tl);
+                })
+            
+                close.addEventListener('click', () => {
+                    tl.reverse();
+                }) 
 
 
+
+
+        </script>
+        <div class="card col-8 p-3" style="background-color: transparent;">
+            <div class="card" style="background-color: #221e25;">
+            <h2 style="font-family: monospace;">Your Team</h2>
+            <table class="table " id="tblMaterials"style="font-family: monospace;">
+                <thead>
+                    <tr>
+                        <th>Last Name</th>
+                        <th>First Name</th>
+                        <th>Position</th>
+                        <th>Location</th>
+                        <th>Wage</th>
+                        <th>Status</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>McCalister</td> <td>Rebecca</td> <td>Mule</td> <td>Offsite</td> <td>6.34</td><td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Brian</td><td>George</td><td>Grower</td><td>GreenHouse</td><td>11.23</td><td>Inactive</td>
+                        </tr>
+                    </tbody>
+                
+                </thead>
+               
+            </table>
+        </div>
+        </div>
+          
+        
+        
     </body>
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/bootstrap.bundle.min.js"></script>

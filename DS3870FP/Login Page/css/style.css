@@ -207,3 +207,8 @@
               
     
     
+.divNewEmployee{
+    opacity: 0;
+    transform: translateY(-100%) scale(.9);
+    pointer-events: none;
+}

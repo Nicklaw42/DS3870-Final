@@ -7,3 +7,12 @@ $(document).ready(function() {
         scroller:       true
     });
 } );
+
+$('#Employees').change(function() {
+    if($('#Employees').val() == '---'){
+        $('#divGeorge').slideUp();
+    //$('divHours').css('display','none');
+    } else {
+        $('#divGeorge').slideDown();
+    }
+})
