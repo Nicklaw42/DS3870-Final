@@ -2,7 +2,31 @@
     box-sizing: border-box;
 }
 
-
+::-webkit-scrollbar{
+    width: 20px;
+}
+    ::-webkit-scrollbar-thumb{
+        background-color: #3c3541;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+    }
+   ::-webkit-scrollbar-corner{
+       background-color:   transparent;
+   }
+.ctnFrame{
+    background-color: #221e25;
+}
+.divHomePage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.divLeftColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .ctnBody{
     
     display: flex;
@@ -206,7 +230,8 @@
             }
               
     
-    
+
+
 .divNewEmployee{
     opacity: 0;
     transform: translateY(-100%) scale(.9);
@@ -216,3 +241,57 @@
 .divGeorge{
     display: none;
 }
+
+.divTasks{
+    display: none;
+}
+
+.divBuilding{
+    display: none;
+}
+    .divTasksButtons{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+        .divTasksButtons_Edit{
+            color: white;
+            background-color: #349dda;
+            border: 5px solid #e6e6ff;
+        }
+        .divTasksButtons_Delete{
+            color: white;
+            background-color: #c71919;
+            border: 5px solid #e6e6ff;
+        }
+.btnAddEmployee{
+    width: 50%;
+    align-self: center;
+    background-color: #b8b01d;
+    color: white;
+}
+.divEmployeeButtons{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+        .divEmployeeButtons_Create{
+            color: white;
+            background-color: #34da3c;
+            border: 5px solid #e6e6ff;
+        }
+        .divEmployeeButtons_Cancel{
+            color: white;
+            background-color: #c71919;
+            border: 5px solid #e6e6ff;
+        }
+.iframePortal{
+    height: 95%;
+    width: 95%;
+    
+}
+   

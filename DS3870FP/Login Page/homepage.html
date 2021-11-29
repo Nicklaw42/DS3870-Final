@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.css"/>
+        <link rel="stylesheet" href="css/lib/bootstrap.min darkly.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="card p-2 " style="font-family: monospace;  background-color: #221e25; border-color: #fc542b; border-width: 3px;">
+            <h1>Your DashBoard</h1> 
+            <div class="card divHomePage mb-2" style=" background-color: #221e25; border-color: #fc542b; border-width: 3px;">
+                <div class="card  col-6" style=" background-color: #221e25;">
+                <h3>User's Name</h3>
+                <h4>Email:</h4>
+                <h4>Phone:</h4>
+                 </div>
+                 <div class="card col-6" style=" background-color: #221e25;">
+                    <h3>User's Organization</h3>
+                    <h4>Type of Organization:</h4>
+                    <h4>Address of Organization:</h4>
+                    <h4>Phone of Organization:</h4>
+                </div>
+            </div>
+            <div class="card divTaskList" style=" background-color: #221e25; border-color: #fc542b; border-width: 3px;">
+                <div class="card p-3" style="background-color: #221e25;">
+                    <h2 style="font-family: monospace;">Your Tasks</h2>
+                    <table class="table " id="tblMaterials"style="font-family: monospace;">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>ETC</th>
+                                <th>Completion Status</th>
+                                <th>Location</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>Package</td> <td>12/5/22 8:00 PM</td> <td>70%</td> <td>Warehouse</td>
+                                </tr>
+                                <tr>
+                                    <td>Label Boxes</td><td>12/6/22 6:00 PM</td><td>0%</td><td>Warehouse</td>
+                                </tr>
+                                
+                            </tbody>
+                        
+                        </thead>
+                       
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
+</html>

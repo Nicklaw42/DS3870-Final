@@ -18,3 +18,20 @@ $('#Employees').change(function() {
         $('#btnAddEmployee').css('pointer-events', 'auto');
     }
 })
+$('#slcTasks').change(function() {
+    if($('#slcTasks').val() != '---'){
+        $('#divTasks').css('display', 'inherit');
+    } else {
+        $('#divTasks').css('display', 'none');
+    
+    }
+})
+$('#slcBuilding').change(function() {
+    if($('#slcBuilding').val() != '---'){
+        $('#divBuilding').css('display', 'inherit');
+    } else {
+        $('#divBuilding').css('display', 'none');
+    
+    }
+})
+

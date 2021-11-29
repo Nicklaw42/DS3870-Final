@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.css"/>
+        <link rel="stylesheet" href="css/lib/bootstrap.min darkly.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="row" style="background-color: transparent;">
+        <div class="card col-5" style="font-family: monospace; background-color: transparent;"> 
+        <div class="card p-3" style=" background-color: #221e25; border-color: #c42d2d; border-width: 3px;">
+            <h2>Create New Location</h2>
+            <div class="card" style="background-color: #221e25; border-color: #c42d2d; border-width: 3px;">
+            <label class="mt-1 mb-1">Campus: <input></label>
+            <label class="mt-1 mb-1">Building: <input></label>
+            <span class="input card mt-1 mb-1" role="textbox" style="background-color: #221e25" >Description: <input></span>
+            </div>
+            <button class="button mt-3" style="color: white; background-color: #c42d2d">Add Task</button>
+        </div>
+            <div class="card mt-2 p-3" style="background-color: #221e25; border-color: #c42d2d; border-width: 3px;">
+                <h2>Select Campus:</h2>
+                <select id="slcTasks">
+                    <option>---</option>
+                    <option>Main</option>
+                    <option>Idk not main?</option>
+                </select>
+            </div>
+            <div class="card divTasks" id="divTasks" style="background-color: #221e25; border-color: #c42d2d; border-width: 3px;">
+                <label>City:</label>
+                <label>State:</label>
+                <span  class="input card mt-1 mb-1" role="textbox" style="background-color: #221e25; border-color: #c42d2d; border-width: 3px;">Desciption:</span>
+                <div class="card divTasksButtons" style="background-color: transparent";>
+                    <button class="button divTasksButtons_Edit"> Edit </button>
+                    <button class="button divTasksButtons_Delete"> Delete </button>
+                </div>
+                <h4>Select Building:</h4>
+                <select id="slcBuilding">
+                    <option>---</option>
+                    <option>WareHouse</option>
+                    <option>Office</option>
+                    <option>Island</option>
+                </select>
+               
+            </div>
+            <div class="card divBuilding" id="divBuilding"style="background-color: #221e25; border-color: #c42d2d border-width: 3px;">
+                <label>Address:</label>
+                <label>Number:</label>
+                <label>Tasks:</label>
+                <span  class="input card mt-1 mb-1" role="textbox" style="background-color: #221e25; border-color: #c42d2d; border-width: 3px;">Desciption:</span>
+            </div>
+        </div>
+        <div class="card col-7 p-3" style="background-color: transparent;">
+            <div class="card p-3" style="background-color: #221e25; border-color: #c42d2d; border-width: 3px;">
+            <h2 style="font-family: monospace;">Your Locations</h2>
+            <table class="table " id="tblMaterials"style="font-family: monospace;">
+                <thead>
+                    <tr>
+                        <th>Campus</th>
+                        <th>Building</th>
+                        <th>TasksCount</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Main</td> <td>Warehouse</td> <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Main</td><td>Office</td> <td>2</td>
+                        </tr>
+                    </tbody>
+                
+                </thead>
+               
+            </table>
+        </div>
+        </div>
+          
+        
+        
+    </body>
+    
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
+</html>
