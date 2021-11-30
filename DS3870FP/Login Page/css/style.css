@@ -17,6 +17,8 @@
 .ctnFrame{
     background-color: #221e25;
 }
+
+
 .divHomePage{
     display: flex;
     flex-direction: row;
@@ -25,15 +27,21 @@
 .divLeftColumn{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: stretch;
 }
+    .divLeftColumn > .btnFrame{
+        flex-grow: 1;
+        flex-basis: 0%;
+        
+    }
 .ctnBody{
     
     display: flex;
     align-items: center;
     justify-content:flex-start;
     height: 100%;
-    background-image: url('C:/Users/nickl/OneDrive - Tennessee Tech University/Desktop/DS3870-Final/DS3870FP/Login Page/css/images/Backgound2.4.png');
+    /* background-image: url('C:/Users/nickl/OneDrive - Tennessee Tech University/Desktop/DS3870-Final/DS3870FP/Login Page/css/images/Backgound2.4.png'); */
     background-size: cover;
     opacity: 1;
     }
