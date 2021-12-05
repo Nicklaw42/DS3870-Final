@@ -27,7 +27,7 @@
                 <input type="password" class="itmPassword form-control" placeholder="Password" aria-label="Enter Password">
             </div>
             <div class="ctnButton">
-            <button type="button" class="itmLoginButton btn" ><a style="color: white;" href="file:///C:/Users/nickl/OneDrive%20-%20Tennessee%20Tech%20University/Desktop/DS3870-Final/DS3870FP/Login%20Page/frame.html">Login</a> </button>
+            <button type="button" class="itmLoginButton btn" ><a style="color: white;" href="frame.html">Login</a> </button>
             <button type="button" id="my-signin2" class="itmGoogleButton btn ">Google Login</button>
             <button type="button" class="itmSignUpButton btn">Create Account</button>
             </div>
@@ -37,10 +37,13 @@
  
     <div class="itmUser card"> 
         <h4 style="text-align: center;"> Your Information </h4> 
-        <input type="text" class="form-control" placeholder="Enter Email">
-        <input type="text" class="form-control" placeholder="Enter Password"> 
-        <input type="text" class="form-control" placeholder="Retype Password">
-        <input type="text" class="form-control" placeholder="Phone">
+        <input type="text" class="form-control" placeholder="Enter Email" id="txtUserName">
+        <input type="text" class="form-control" placeholder="Enter First Name" id="txtFirstName">
+        <input type="text" class="form-control" placeholder="Enter Last Name" id="txtLastName">
+        <input type="text" class="form-control" placeholder="Enter Phone" id="txtPhone">
+        <input type="text" class="form-control" placeholder="Enter Password" id="txtPassword"> 
+        <input type="text" class="form-control" placeholder="Enter Team Code" id="txtTeamCode">
+ 
     </div>
     <div class="itmOrg card"> 
         <h4 style="text-align: center;"> Organization </h4>
@@ -50,7 +53,7 @@
         <input type="text" class="form-control" placeholder="Organization Phone">
     </div>
     <div class="itmCreate card"> 
-        <button type="button" class="itmCreateConfirm btn">Create Account</button> 
+        <button type="button" class="itmCreateConfirm btn" id="btnCreateUser">Create Account</button> 
         <button type="button" class="itmCreateReturn btn">Return</button> 
     </div>
     <div class="itmReturn card">  
@@ -70,7 +73,7 @@
     tl.to('.itmLeft, .itmRight', {opacity: 0, duration: .8})
     tl.to('.ctnbody', {opacity: 0.5, duration: .5})
     tl.to('.ctnSignUp', {opacity: 1, x:0, scale: 1, pointerEvents: 'auto', duration: 1}, "-=.6")
-    tl.to('.stagger', {x:0, opacity: 1, stagger: .2})
+
     tl.pause();
     
 
