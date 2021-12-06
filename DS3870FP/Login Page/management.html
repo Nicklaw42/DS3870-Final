@@ -38,18 +38,18 @@
             </div>
             <div class="card mt-1 divNewEmployee" id="divNewEmployee" style="background-color: #221e25; border-color: #fff628; border-width: 3px;">
                 <h4>New Employee</h4>
-               <label> Last Name: <input ></label>
-               <label> First Name: <input ></label>
-               <label>ID#:<input></label>
-               <label> Position: <input ></label>
-               <label> Location: <input ></label>
-               <label> Wage: <input ></label>
+                <input type="text" class="form-control" placeholder="Enter Email" id="txtEmail">
+                <input type="text" class="form-control" placeholder="Enter First Name" id="txtUserFirstName">
+                <input type="text" class="form-control" placeholder="Enter Last Name" id="txtUserLastName">
+                <input type="text" class="form-control" placeholder="Enter Phone" id="txtUserPhone">
+                <input type="text" class="form-control" placeholder="Enter Password" id="txtUserPassword"> 
+                <input type="text" class="form-control" placeholder="Enter Team Code" id="txtUserTeamCode">
                <label>Status: <select>
                 <option value="Active">Active</option>
                 <option value="Inactive">Inactive</option>                
             </select></label>
             <div class="card divEmployeeButtons" style="background-color: transparent";>
-                <button class="button divEmployeeButtons_Create"> Create </button>
+                <button class="button divEmployeeButtons_Create" id="btnCreateUser"> Create </button>
                 <button class="button divEmployeeButtons_Cancel"> Cancel </button>
             </div>
             </div>
@@ -113,5 +113,6 @@
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/addUser.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
 </html>
