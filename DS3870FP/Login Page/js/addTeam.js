@@ -22,3 +22,16 @@ $('#btnAddTeam').click(function(){
         })
 })
 })
+
+//Everything below is for filling the team table on the Management page. 
+$('#btnFindTeam').click(function(){
+    console.log("FindTeamClicked");
+    let strTeamCode = $('#txtFindTeam').val();
+    $.getJSON('https://www.swollenhippo.com/DS3870/getTeamMembersWithCode.php?strTeamCode='+ strTeamCode +'', function(output){
+        $.each(output, function(i, output){
+        $('#tblMaterials').append( '<tr><td>'+output.Email+'</td><td>'+output.FirstName+'</td><td>'+output.LastName+'</td><td>'+output.Phone+'</td><td>'+output.UserStatus+'</td></tr>')
+        })
+        $('#tblMaterials').DataTable();
+    })
+    
+})

@@ -8,16 +8,7 @@ $(document).ready(function() {
     });
 } );
 
-$('#Employees').change(function() {
-    if($('#Employees').val() != '---'){
-        $('#divGeorge').css('display', 'inherit');
-        $('#btnAddEmployee').css('pointer-events', 'none');
-    //$('divHours').css('display','none');
-    } else {
-        $('#divGeorge').css('display', 'none');
-        $('#btnAddEmployee').css('pointer-events', 'auto');
-    }
-})
+
 $('#slcTasks').change(function() {
     if($('#slcTasks').val() != '---'){
         $('#divTasks').css('display', 'inherit');

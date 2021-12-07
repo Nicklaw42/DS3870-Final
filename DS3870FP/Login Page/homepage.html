@@ -11,19 +11,7 @@
     <body>
         <div class="card p-2 " style="font-family: monospace;  background-color: #221e25; border-color: #fc542b; border-width: 3px;">
             <h1>Your DashBoard</h1> 
-            <div class="card divHomePage mb-2" style=" background-color: #221e25; border-color: #fc542b; border-width: 3px;">
-                <div class="card  col-6" style=" background-color: #221e25;">
-                <h3>User's Name</h3>
-                <h4>Email:</h4>
-                <h4>Phone:</h4>
-                 </div>
-                 <div class="card col-6" style=" background-color: #221e25;">
-                    <h3>User's Organization</h3>
-                    <h4>Type of Organization:</h4>
-                    <h4>Address of Organization:</h4>
-                    <h4>Phone of Organization:</h4>
-                </div>
-            </div>
+            <div id="divUserDashboard"></div>
             <div class="card divTaskList" style=" background-color: #221e25; border-color: #fc542b; border-width: 3px;">
                 <div class="card p-3" style="background-color: #221e25;">
                     <h2 style="font-family: monospace;">Your Tasks</h2>
@@ -49,7 +37,7 @@
                        
                     </table>
                 </div>
-                <div class="card" style="height: 50%; "> 
+                <div class="card" style="height: 10%; width: 40%; background-color: #221e25; border-color: #fc542b; border-width: 3px;"> 
                     <h1>Add Team.</h1>
                     <button type="button" id="btnAddTeam" style="background-color: #fc542b;"> Add Team</button>
                     <input type="text" class="form-control" placeholder="TeamName" id="txtTeamName">
@@ -69,7 +57,9 @@
     </body>
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/buildhomepage.js"></script>
     <script src="js/app.js"></script>
     <script src="js/addTeam.js"></script>
+    
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
 </html>
