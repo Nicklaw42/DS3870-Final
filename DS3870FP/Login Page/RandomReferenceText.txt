@@ -1,0 +1,35 @@
+https://www.swollenhippo.com/DS3870/addUser.php?
+strUserName=Tobisobowale@gmail.com&
+strFirstName=Tobi&
+strLastName=Sobowale&
+strPhone=6156865568&
+strPassword=Dogs&
+strTeamCode=YTP2EFU3
+
+var arrUserInfo;
+$.getJSON('https://www.swollenhippo.com/DS3870/getUserDetailsBySessionID.php?strSessionID=9b34da53-4253-414c-8f09-dc31377efa92'), function(Object){
+   
+    arrUserInfo = Object;
+    buildHomePage();
+  
+}
+
+function buildHomePage(){
+$.each(arrUserInfo, function(i, User){
+    let strUser = '<div class="card divHomePage mb-2" style=" background-color: #221e25; border-color: #fc542b; border-width: 3px;">';
+    strUser = '<div class="card  col-6" style=" background-color: #221e25;">';
+    strUser += '<h3>'+ User.FirstName +'</h3>';
+    strUser +='<h4>Email:'+User.Email+'</h4>';
+    strUser += '<h4>Phone:</h4>';
+    strUser += '</div>';
+    strUser += '<div class="card col-6" style=" background-color: #221e25;">';
+    strUser += '<h3>Users Organization</h3>';
+    strUser += '<h4>Type of Organization:</h4>';
+    strUser += '<h4>Address of Organization:</h4>';
+    strUser += '<h4>Phone of Organization:</h4>';
+    strUser += '</div>';
+    strUser += '</div>';
+    $('#divUserDashboard').append(strUser);
+    alert("this is working");
+})
+}
