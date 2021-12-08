@@ -43,7 +43,7 @@ $('#btnCreateUser').click(function(){
         })
     })
 
-    $.getJSON('https://www.swollenhippo.com/DS3870/getUserDetailsBySessionID.php?strSessionID=9b34da53-4253-414c-8f09-dc31377efa92', function(User){
+    /*$.getJSON('https://www.swollenhippo.com/DS3870/getUserDetailsBySessionID.php?strSessionID=' +sessionStorage.getItem('SessionID'), function(User){
     
         let strUser = '<div id="divEmployeeProfile">';
         strUser += '<p>Email: '+User[0].Email+'';
@@ -57,7 +57,7 @@ $('#btnCreateUser').click(function(){
     
         
   
-})
+})*/
 
   
 

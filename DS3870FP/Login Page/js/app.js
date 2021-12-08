@@ -1,13 +1,19 @@
-$(document).ready(function() {
-    $('#tblMaterials').DataTable({
-        filter: true,
-        deferRender:    true,
-        scrollY:        200,
-        scrollCollapse: true,
-        scroller:       true
-    });
-} );
 
+    
+
+$(document).on('click','#btnLogin',function(){
+    let strUsername = $('#txtLoginEmail').val();
+    let strPassword = $('#txtLoginPassword').val();
+    $.getJSON('https://www.swollenhippo.com/DS3870/newSession.php?strUsername='+ strUsername + '&strPassword=' + strPassword,function (data) {
+    if(data.Outcome == 'Error'){
+    alert("Error");
+    } else {
+    sessionStorage.setItem('SessionID',data.Outcome);
+    window.location.href='frame.html';
+    }
+    
+    })
+    })
 
 $('#slcTasks').change(function() {
     if($('#slcTasks').val() != '---'){

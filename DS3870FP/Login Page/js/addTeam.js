@@ -1,4 +1,5 @@
 $('#btnAddTeam').click(function(){
+   
     console.log('New Team CLicked');
     let strTeamName = $('#txtTeamName').val();
     let strStreetAddress = $('#txtStreetAddress').val();
@@ -23,15 +24,43 @@ $('#btnAddTeam').click(function(){
 })
 })
 
+
+/*var arrTeamMembers;
+
+
+    if(sessionStorage.getItem('SessionID') == true){
+        
+        $.getJSON('https://www.swollenhippo.com/DS3870/getTeamMembersBySession.php?SessionID='+ sessionStorage.getItem('SessionID'), function (data){
+           arrTeamMembers = data;
+            $.each(data, function(result){
+                let strTableRow =  '<tr><td>'+result.LastName+', '+result.FirstName+'</td><td>'+result.Email+'</td><td>'+result.UserStatus+'</td></tr>'
+                $('#tblTeam tbody').append(strTableRow);
+            })
+        })
+    }
+
+
+function verifySessionID(strSessionID){
+    if(sessionStorage.getItem('SessionID')){
+        $.getJSON('https://www.swollenhippo.com/DS3870/verifySession.php?SessionID='+strSessionID, function (data){
+            if(data.Outcome == 'Valid'){
+                return true;
+            }else{
+                return false;
+            }
+        })
+    }else{
+        return false;
+    }*/
 //Everything below is for filling the team table on the Management page. 
 $('#btnFindTeam').click(function(){
     console.log("FindTeamClicked");
     let strTeamCode = $('#txtFindTeam').val();
     $.getJSON('https://www.swollenhippo.com/DS3870/getTeamMembersWithCode.php?strTeamCode='+ strTeamCode +'', function(output){
         $.each(output, function(i, output){
-        $('#tblMaterials').append( '<tr><td>'+output.Email+'</td><td>'+output.FirstName+'</td><td>'+output.LastName+'</td><td>'+output.Phone+'</td><td>'+output.UserStatus+'</td></tr>')
+        $('#tblTeam').append( '<tr><td>'+output.Email+'</td><td>'+output.FirstName+'</td><td>'+output.LastName+'</td><td>'+output.Phone+'</td><td>'+output.UserStatus+'</td></tr>')
         })
-        $('#tblMaterials').DataTable();
+        $('#tblTeam').DataTable();
     })
     
 })
