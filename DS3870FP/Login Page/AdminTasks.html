@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.css"/>
+        <link rel="stylesheet" href="css/lib/bootstrap.min darkly.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="row" style="background-color: #221e25;">
+        <div class="card col-5" style="font-family: monospace; background-color: transparent;"> 
+        <div class="card p-3" style=" background-color: #221e25; border-color: #7dcf2f; border-width: 3px;">
+            <h2>Create New Task</h2>
+            <div class="card" style="background-color: #221e25; border-color: #7dcf2f; border-width: 3px;">
+            <label class="mt-1 mb-1">Name: <input></label>
+            <label class="mt-1 mb-1">Employeee: <input></label>
+            <label class="mt-1 mb-1">Materials Needed: <input></label>
+            <label class="mt-1 mb-1">Estimated Time of Completion: <input type="datetime-local"></label>
+            <span class="input card mt-1 mb-1" role="textbox" style="background-color: #221e25" >Description: <input></span>
+            <span class="input card mt-1 mb-1" role="textbox" style="background-color: #221e25">Instructions: <input></span>
+            </div>
+            <button class="button mt-3" style="color: white; background-color: #7dcf2f">Add Task</button>
+        </div>
+            <div class="card mt-2 p-3" style="background-color: #221e25; border-color: #7dcf2f; border-width: 3px;">
+                <h2>Select Task:</h2>
+                <select id="slcTasks">
+                    <option>---</option>
+                    <option>Label Boxes</option>
+                    <option>Package</option>
+                </select>
+            </div>
+            <div class="card divTasks" id="divTasks" style="background-color: #221e25; border-color: #7dcf2f; border-width: 3px;">
+                <label class="mt-1 mb-1">Name:</label>
+                <label class="mt-1 mb-1">Employee:</label>
+                <label class="mt-1 mb-1">Materials Needed:</label>
+                <label class="mt-1 mb-1">Estimated Time of Completion:</label>
+                <label class="mt-1 mb-1">Completion Status:</label>
+                <span  class="input card mt-1 mb-1" role="textbox" style="background-color: #221e25; border-color: #7dcf2f; border-width: 3px;">Desciption:</span>
+                <span class="input card mt-1 mb-1" role="textbox" style="background-color: #221e25; border-color: #7dcf2f; border-width: 3px;">Instructions:</span>
+                <div class="card divTasksButtons" style="background-color: transparent";>
+                    <button class="button divTasksButtons_Edit"> Edit </button>
+                    <button class="button divTasksButtons_Delete"> Delete </button>
+                </div>
+            </div>
+        </div>
+        <div class="card col-7 p-3" style="background-color: transparent;">
+            <div class="card" style="background-color: #221e25; border-color: #7dcf2f; border-width: 3px;">
+            <h2 style="font-family: monospace;">Your Tasks</h2>
+            <table class="table " id="tblMaterials"style="font-family: monospace;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ETC</th>
+                        <th>Completion Status</th>
+                        <th>Location</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Package</td> <td>12/5/22 8:00 PM</td> <td>70%</td> <td>Warehouse</td>
+                        </tr>
+                        <tr>
+                            <td>Label Boxes</td><td>12/6/22 6:00 PM</td><td>0%</td><td>Warehouse</td>
+                        </tr>
+                        
+                    </tbody>
+                
+                </thead>
+               
+            </table>
+        </div>
+        </div>
+          
+        
+        
+    </body>
+    
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
+</html>

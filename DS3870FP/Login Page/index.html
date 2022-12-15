@@ -1,0 +1,102 @@
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.css"/>
+        <link rel="stylesheet" href="css/lib/bootstrap.min darkly.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+      
+ 
+        <title>Hermes Login</title>
+    </head>
+    <body> 
+        <div class="ctnBody">  
+            <div class="itmLeft">
+                <img src="css/images/Hermes Managment2.png" class="itmPattern">
+                <h2 class="itmCaption"> Helping you build your pantheon </h2>
+            </div>
+        <div class="itmRight card">
+            <div class="ctnLogin"  style="text-align: center;">
+                <h1 class="itmLogin" >Hermes Managment </h1>
+                <h1 class="itmLogin">Solutions</h1>
+            </div>
+            <div class="ctnInputs">
+                <input type="text" id="txtLoginEmail" class="itmUsername form-control" placeholder="Email" aria-label="Email">
+                <input type="password" id="txtLoginPassword" class="itmPassword form-control" placeholder="Password" aria-label="Enter Password">
+            </div>
+            <div class="ctnButton">
+            <button type="button" class="itmLoginButton btn" id="btnLogin" >Login</button>
+            <button type="button" id="my-signin2" class="itmGoogleButton btn ">Google Login</button>
+            <button type="button" class="itmSignUpButton btn">Create Account</button>
+            </div>
+    </div>
+    </div>
+<div class="ctnSignUp">
+ 
+    <div class="itmUser card"> 
+        <h4 style="text-align: center;"> Your Information </h4> 
+        <input type="text" class="form-control" placeholder="Enter Email" id="txtUserName">
+        <input type="text" class="form-control" placeholder="Enter First Name" id="txtUserFirstName">
+        <input type="text" class="form-control" placeholder="Enter Last Name" id="txtUserLastName">
+        <input type="text" class="form-control" placeholder="Enter Phone" id="txtUserPhone">
+        <input type="text" class="form-control" placeholder="Enter Password" id="txtUserPassword"> 
+        <input type="text" class="form-control" placeholder="Enter Team Code" id="txtUserTeamCode">
+ 
+    </div>
+    <div class="itmOrg card"> 
+        <h4 style="text-align: center;"> Organization </h4>
+        <input type="text" class="form-control" placeholder="Organization Name">
+        <input type="text" class="form-control" placeholder="Organization Address">
+        <input type="text" class="form-control" placeholder="Organization Type">
+        <input type="text" class="form-control" placeholder="Organization Phone">
+    </div>
+    <div class="itmCreate card"> 
+        <button type="button" class="itmCreateConfirm btn" >Create User</button> 
+        <button type="button" class="itmCreateReturn btn">Return</button> 
+    </div>
+    <div class="itmReturn card">  
+        <img src="css/images/Hermes Managment2.png" class="itmReturnLogo">
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    
+    let open = document.querySelector('.itmSignUpButton');
+    let close = document.querySelector('.itmCreateReturn');
+    let tl = gsap.timeline();
+    
+    
+    tl.to('.itmLeft, .itmRight', {opacity: 0, duration: .8})
+    tl.to('.ctnbody', {opacity: 0.5, duration: .5})
+    tl.to('.ctnSignUp', {opacity: 1, x:0, scale: 1, pointerEvents: 'auto', duration: 1}, "-=.6")
+
+    tl.pause();
+    
+
+    open.addEventListener('click', () => {
+        tl.play();
+        console.log(tl);
+    })
+   
+    close.addEventListener('click', () => {
+        tl.reverse();
+        
+        
+    }) 
+</script>
+
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/session.js"></script>
+        <script src="js/addUser.js"></script>
+        <script src="js/lib/bootstrap.bundle.min.js"></script>
+        <script src="js/lib/bootstrap.bundle.min.js.map"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+       
+  
+    </body>
+    </html>

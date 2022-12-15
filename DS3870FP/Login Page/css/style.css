@@ -1,0 +1,322 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+    ::-webkit-scrollbar-thumb{
+        background-color: #3c3541;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+    }
+   ::-webkit-scrollbar-corner{
+       background-color:   transparent;
+   }
+.ctnFrame{
+    background-color: #221e25;
+    display: flex;
+    flex-direction: row;
+}
+    .divLeftColumn{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        height: 99%;
+    }
+        .divLeftColumn > .btnFrame{
+            flex-grow: 1;
+        }
+.divHomePage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
+.ctnBody{
+    
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    height: 100%;
+    background-image: url('images/Backgound2.4.png');
+    background-size: cover;
+    opacity: 1;
+    }
+
+
+.itmLeft{
+    width: 30%;
+    height: 100%;
+    background-color: #221e25;
+    border: 6px solid grey; 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    }
+   
+     @media (max-width: 800px) {
+        .itmLeft {
+            opacity: 0;
+        }
+        
+      }
+    .itmCaption{
+        font-family: monospace;
+        text-align: center;
+    }
+.itmRight{
+    background-color: #221e25;
+    border: 6px solid grey; 
+    margin-left: 5%; 
+    margin-right: 20%;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    justify-content: flex-start;
+    align-self: center;
+}
+    @media (max-width: 800px){
+        .itmRight{
+            margin-left: 0%;
+        }
+        
+    }
+
+        .ctnLogin{
+            padding: 1%;
+            color: white;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+        }
+         
+
+        .ctnInputs{
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            margin-left: 15%;
+            width: 75%;
+        }
+            .itmUsername{
+                margin-top: 10%;
+                margin-bottom: 5px;
+                border: 5px solid #e6e6ff;
+            }
+            .itmPassword{
+                margin-top: 1%;
+                margin-bottom: 5px;
+                border: 5px solid #e6e6ff;
+            }
+
+
+    
+.ctnButton{
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    width: 75%;
+}
+        .ctnButton > .itmLoginButton{
+            margin-top: 10%;
+            margin-bottom: 3%;
+            background-color:  #c42d2d;
+            border: 5px solid #e6e6ff;
+        }
+        .ctnButton > .itmGoogleButton{
+            margin-top: 3%;
+            margin-bottom: 3%;
+            background-color:    #28d9e1;
+            border: 5px solid #e6e6ff;
+        }
+        .ctnButton > .itmSignUpButton{
+            margin-top: 3%;
+            margin-bottom: 5%;
+            background-color:    #fc542b   ;
+            border: 5px solid #e6e6ff;
+        }
+
+.ctnSignUp{
+    font-family: monospace;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px 30px;
+    opacity: 0;
+    transform: translateX(10%) scale(.9);
+    pointer-events: none;
+}
+        .itmUser, .itmCreate{
+            margin-left: 5%;
+        }
+        .itmOrg, .itmReturn{
+            margin-right: 5%;
+        }
+
+        @media (max-width: 500px) {
+            .itmOrg, .itmReturn, .itmUser, .itmCreate {
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+        }
+
+@media (max-width: 500px) {
+    .ctnSignup {
+        flex-wrap: nowrap;
+        justify-content: none;
+      flex-direction: column;
+    }
+  }
+    .itmUser, .itmCreate, .itmOrg, .itmReturn{
+        align-self: center;
+        width: 40%;
+        height: 40%;
+       
+    }
+    @media (max-width: 500px) {
+        .itmUser, .itmCreate, .itmOrg, .itmReturn{
+            width: 90%;
+        }}
+    .itmUser{
+        background-color: #221e25;
+        border: 6px solid grey; 
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .itmOrg{
+        background-color: #221e25;
+        border: 6px solid grey; 
+        justify-content: space-evenly;
+    }
+    .itmCreate{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #221e25;
+        border: 6px solid grey; 
+    }
+            .itmCreateConfirm{
+                align-self: center;
+                background-color: #fc542b;
+                border: 5px solid #e6e6ff;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                height: 40%;
+                width: 60%;
+            }
+            .itmCreateReturn{
+                align-self: center;
+                background-color: #28d9e1 ;
+                border: 5px solid #e6e6ff;
+                margin-bottom: 5%;
+                height: 40%;
+                width: 60%;
+            }
+            @media (max-width: 500px) {
+                .itmCreateConfirm, .itmCreateReturn{
+                    flex-grow: 1 !important;
+                }
+            }
+
+    .itmReturn{
+        background-color: #221e25;
+        border: 6px solid grey; 
+    }
+            .itmReturnLogo
+            {
+                width: 100%;
+                height: 100%;
+            }
+              
+    
+
+
+.divNewEmployee{
+    opacity: 0;
+    transform: translateY(-100%) scale(.9);
+    pointer-events: none;
+}
+
+.divGeorge{
+    display: none;
+}
+
+.divTasks{
+    display: none;
+}
+
+.divBuilding{
+    display: none;
+}
+    .divTasksButtons{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+        .divTasksButtons_Edit{
+            color: white;
+            background-color: #349dda;
+            border: 5px solid #e6e6ff;
+        }
+        .divTasksButtons_Delete{
+            color: white;
+            background-color: #c71919;
+            border: 5px solid #e6e6ff;
+        }
+.btnAddEmployee{
+    width: 50%;
+    align-self: center;
+    background-color: #b8b01d;
+    color: white;
+}
+.divEmployeeButtons{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+        .divEmployeeButtons_Create{
+            color: white;
+            background-color: #34da3c;
+            border: 5px solid #e6e6ff;
+        }
+        .divEmployeeButtons_Cancel{
+            color: white;
+            background-color: #c71919;
+            border: 5px solid #e6e6ff;
+        }
+.iframePortal{
+    height: 100%;
+    width: 95%;
+    
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+.close:hover,
+.close:focus {
+  box-shadow: 
+    inset -3.5em 0 0 0 var(--hover),
+    inset 3.5em 0 0 0 var(--hover);  
+}

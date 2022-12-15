@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.css"/>
+        <link rel="stylesheet" href="css/lib/bootstrap.min darkly.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="card p-2 " style="font-family: monospace;  background-color: #221e25; border-color: #fc542b; border-width: 3px;">
+            <h1>Your DashBoard</h1> 
+            <div id="divUserDashboard"></div>
+            <div class="card divTaskList" style=" background-color: #221e25; border-color: #fc542b; border-width: 3px;">
+                <div class="card p-3" style="background-color: #221e25;">
+                    <h2 style="font-family: monospace;">Your Tasks</h2>
+                    <table class="table " id="tblMaterials"style="font-family: monospace;">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>ETC</th>
+                                <th>Completion Status</th>
+                                <th>Location</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>Package</td> <td>12/5/22 8:00 PM</td> <td>70%</td> <td>Warehouse</td>
+                                </tr>
+                                <tr>
+                                    <td>Label Boxes</td><td>12/6/22 6:00 PM</td><td>0%</td><td>Warehouse</td>
+                                </tr>
+                                
+                            </tbody>
+                        
+                        </thead>
+                       
+                    </table>
+                </div>
+                <div class="card" style="height: 10%; width: 40%; background-color: #221e25; border-color: #fc542b; border-width: 3px;"> 
+                    <h1>Add Team.</h1>
+                    <button type="button" id="btnAddTeam" style="background-color: #fc542b;"> Add Team</button>
+                    <input type="text" class="form-control" placeholder="TeamName" id="txtTeamName">
+                    <input type="text" class="form-control" placeholder="Street Address" id="txtStreetAddress">
+                    <input type="text" class="form-control" placeholder="ZIP" id="txtZIP">
+                    <input type="text" class="form-control" placeholder="State" id="txtState">
+                    <input type="text" class="form-control" placeholder="ContactNumber" id="txtContactNumber">
+                    <input type="text" class="form-control" placeholder="Email" id="txtEmail">
+                    <input type="text" class="form-control" placeholder="FirstName" id="txtFirstName">
+                    <input type="text" class="form-control" placeholder="LastName" id="txtLastName">
+                    <input type="text" class="form-control" placeholder="Phone" id="txtPhone">
+                    <input type="text" class="form-control" placeholder="Password" id="txtPassword">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/buildhomepage.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/addTeam.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
+</html>

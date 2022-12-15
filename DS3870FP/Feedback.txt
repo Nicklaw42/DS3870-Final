@@ -1,0 +1,15 @@
+col-12 col-md-8 offest-md-2
+
+create account button blends in too much on sign up page
+
+Sign up page is too basic 
+
+Charts.js
+
+SweetAlerts
+	-Consider using for "create a blah" things. Think big button that leads to a page.
+
+Play button like "homebase" group. Watch lecture from 12/1/21 to see it. 
+
+Have report on a problem on login page. 
+

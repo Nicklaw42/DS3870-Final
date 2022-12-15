@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.2/datatables.min.css"/>
+        <link rel="stylesheet" href="css/lib/bootstrap.min darkly.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="row" style="background-color: #221e25;">
+        <div class="card col-5" style="font-family: monospace; background-color: transparent;"> 
+        <div class="card p-3" style="background-color: #221e25; border-color: #28d9e1; border-width: 3px;">
+            <h2>Create New Material</h2>
+            <div class="card" style="background-color: #221e25; border-color: #28d9e1; border-width: 3px;">
+            <label class="mt-1 mb-1">Description: <input id="txtDescription"></label>
+            <label class="mt-1 mb-1">Minimum Amount: <input type="number" id="txtMinimumAmount"></label>
+            <label class="mt-1 mb-1">Current Amount: <input type="number" id="txtCurrentAmount"></label>
+            <label class="mt-1 mb-1">Unit Price: <input type="number" id="txtUnitPrice"></label>
+            <label class="mt-1 mb-1">Universal Product Code: <input type="number" id="txtUPC"></label>
+            <span class="input card mt-1 mb-1" role="textbox" style="background-color: #221e25"> Handling Instructions: <input id="txtInstructions"></span>
+            </div>
+            <button class="button mt-3" id="btnAddMaterial" style="color: white; background-color: #20aeb6">Add Material</button>
+        </div>
+            <div class="card mt-2 p-3" style="background-color: #221e25; border-color: #28d9e1; border-width: 3px;">
+                <h2>Select Material:</h2>
+                <select id="slcTasks">
+                    <option>---</option>
+                    <option>Label Boxes</option>
+                    <option>Package</option>
+                </select>
+            </div>
+            <div class="card divTasks" id="divTasks" style="background-color: #221e25; border-color: #28d9e1; border-width: 3px;">
+                <label class="mt-1 mb-1">Name:</label>
+                <label class="mt-1 mb-1">Universal Product Code:</label>
+                <label class="mt-1 mb-1">Unit Price:</label>
+                <label class="mt-1 mb-1">Minimum Amount:</label>
+                <span  class="input card mt-1 mb-1" role="textbox" style="background-color: #221e25; border-color: #28d9e1; border-width: 3px;">Desciption:</span>
+                <span class="input card mt-1 mb-1" role="textbox" style="background-color: #221e25; border-color: #28d9e1; border-width: 3px;">Instructions:</span>
+                <div class="card divTasksButtons" style="background-color: transparent";>
+                    <button class="button divTasksButtons_Edit"> Edit </button>
+                    <button class="button divTasksButtons_Delete"> Delete </button>
+                </div>
+            </div>
+        </div>
+        <div class="card col-7 p-3" style="background-color: transparent;">
+            <div class="card p-3" style="background-color: #221e25; border-color: #28d9e1; border-width: 3px;">
+            <h2 style="font-family: monospace;">Your Materials</h2>
+            <table class="table " id="tblMaterials"style="font-family: monospace;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>UPC</th>
+                        <th>UnitPrice</th>
+                        <th>Minimum Amount</th>
+                        <th>Current Amount</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Pipe</td> <td>2443442</td> <td>43.32</td> <td>500</td><td>675</td>
+                        </tr>
+                        <tr>
+                            <td>Bubblewrap</td><td>2442134</td><td>12.12</td><td>1000</td><td>2000</td>
+                        </tr>
+                    </tbody>
+                
+                </thead>
+               
+            </table>
+        </div>
+        </div>
+          
+        
+        
+    </body>
+    
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/addMaterial.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
+</html>
